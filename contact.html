@@ -1,0 +1,106 @@
+<!-- contact.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Hasnain Shakeel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="left">
+        <h6>LET'S TALK</h6>
+        <h1>Contact</h1>
+        <p class="lead">Need a Technical Support Engineer or SEO help? Reach out and let's discuss your project.</p>
+      </div>
+
+      <div style="display:flex;flex-direction:column;align-items:center;gap:12px;">
+        <div class="profile-img" aria-hidden="true">
+          <img src="images/profile.jpg" alt="Hasnain profile" />
+        </div>
+        <a class="btn" href="images/cv.pdf" download>Download CV</a>
+      </div>
+    </header>
+
+    <div class="content">
+      <aside class="sidebar">
+        <div class="card">
+          <h4>Contact Info</h4>
+          <p>Phone: <strong>+92-316-3386797</strong></p>
+          <p>Email: <strong>hasnainshakeel5646@gmail.com</strong></p>
+          <p>Location: <strong>H-no 12/3/17B Hali Road</strong></p>
+        </div>
+
+        <div class="card">
+          <h4>Availability</h4>
+          <p class="muted">Available for freelance & full-time roles. Preferred: Remote or Hybrid.</p>
+        </div>
+
+        <div class="card">
+          <h4>Social</h4>
+          <p class="muted">LinkedIn · Behance · Dribbble (add your links)</p>
+        </div>
+      </aside>
+
+      <section>
+        <div class="section-title">
+          <h3>Get In Touch</h3>
+          <nav class="nav">
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html" class="active">Contact</a>
+          </nav>
+        </div>
+
+        <div class="contact-hero">
+          <form class="contact-form" id="contactForm" onsubmit="submitForm(event)">
+            <label for="name" style="color:var(--muted);font-size:13px">Your Name</label>
+            <input id="name" class="input" required placeholder="Enter your name" />
+            <label for="email" style="color:var(--muted);font-size:13px">Email</label>
+            <input id="email" type="email" class="input" required placeholder="you@example.com" />
+            <label for="message" style="color:var(--muted);font-size:13px">Message</label>
+            <textarea id="message" rows="6" class="input" placeholder="Tell me about your project..." required></textarea>
+            <div style="display:flex;gap:12px;align-items:center;margin-top:8px">
+              <button class="btn" type="submit">Send Message</button>
+              <a class="btn" href="assets/CV.pdf" download>Download CV</a>
+            </div>
+            <p id="formStatus" style="margin-top:10px;color:var(--muted);font-size:14px"></p>
+          </form>
+
+          <div style="width:320px;">
+            <div class="card">
+              <h4>Office</h4>
+              <p class="muted">H-no 12/3/17B Hali Road, Hyderabad, Sindh</p>
+            </div>
+
+            <div class="card">
+              <h4>Quick Links</h4>
+              <p class="muted">LinkedIn · GitHub · Portfolio (add URLs)</p>
+            </div>
+
+            <div class="card">
+              <h4>Languages</h4>
+              <p class="muted">English · Urdu</p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+
+  </div>
+
+  <script>
+    function submitForm(e){
+      e.preventDefault();
+      const status = document.getElementById('formStatus');
+      // small demo behavior (no backend). Replace with your email endpoint.
+      status.textContent = 'Thank you — your message has been noted (demo).';
+      status.style.color = '#9fdcc7';
+      document.getElementById('contactForm').reset();
+    }
+  </script>
+</body>
+</html>

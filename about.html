@@ -1,0 +1,166 @@
+<!-- about.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hasnain Shakeel — About</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container" role="main">
+    <header class="header" aria-label="Hero header">
+      <div class="left">
+        <h6>HELLO, I'M A</h6>
+        <h1>Technical Support Engineer</h1>
+        <p class="lead">
+          Hi, I’m <strong>Hasnain Shakeel</strong>, a passionate Technical Support Engineer based in Pakistan.
+          I specialize in advanced customer support, inverter system diagnostics and SEO-optimized reporting.
+        </p>
+      </div>
+
+      <div style="display:flex;flex-direction:column;align-items:center;gap:12px;">
+        <div class="profile-img" aria-hidden="true">
+          <img src="images/profile.jpg" alt="Profile photo of Hasnain" />
+        </div>
+        <a class="btn" href="images/cv.pdf" download>Download CV</a>
+      </div>
+    </header>
+
+    <div class="content">
+      <aside class="sidebar" aria-label="Sidebar info">
+        <div class="card">
+          <h4>Contact</h4>
+          <p class="muted">Phone: <strong>+92-316-3386797</strong></p>
+          <p class="muted">Email: <strong>hasnainshakeel5646@gmail.com</strong></p>
+          <p class="muted">Location: <strong>H-no 12/3/17B Hali Road</strong></p>
+        </div>
+
+        <div class="card">
+          <h4>Skills</h4>
+          <p class="muted">Technical Support · SEO · Customer Service · MS Office · Leadership · Sales · Digital Marketing</p>
+        </div>
+
+        <div class="card">
+          <h4>Languages</h4>
+          <p class="muted">English (Intermediate) · Urdu (Intermediate)</p>
+        </div>
+      </aside>
+
+      <section aria-label="About and Experience">
+        <div class="section-title">
+          <h3>About Me</h3>
+          <nav class="nav" aria-label="Main navigation">
+            <a href="about.html" class="active">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+
+        <div class="card">
+          <p>
+            Providing innovative solutions in technical support and ensuring seamless customer service operations by optimizing inverter systems to enhance client satisfaction.
+            Skilled in SEO strategies including On-Page, Off-Page, Technical, and Local SEO to drive growth and visibility. Experienced in teamwork and data reporting to streamline processes and deliver measurable results.
+          </p>
+        </div>
+
+        <div style="margin-top:18px;">
+          <div class="section-title">
+            <h3>Work Experience</h3>
+            <div></div>
+          </div>
+
+          <div class="timeline" aria-hidden="false">
+            <div class="t-item">
+              <span class="dot" aria-hidden="true"></span>
+              <div class="job">
+                <h4>CROWN MICRO Pvt ltd</h4>
+                <div class="meta">Technical Support Engineer — 2025 - Present</div>
+                <ul>
+                  <li>Provided remote technical support to customers by diagnosing and resolving inverter issues.</li>
+                  <li>Configured and optimized inverter systems online to ensure smooth performance.</li>
+                  <li>Ensured high customer satisfaction and contributed to company growth through effective solutions.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="t-item">
+              <span class="dot" aria-hidden="true"></span>
+              <div class="job">
+                <h4>Trax Courier and Logistics</h4>
+                <div class="meta">Logistics Support & Team Lead — 2022 - 2024</div>
+                <ul>
+                  <li>Verified consignee details via calling support to confirm orders and addresses.</li>
+                  <li>Updated and maintained accurate status records in the company portal.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="t-item">
+              <span class="dot" aria-hidden="true"></span>
+              <div class="job">
+                <h4>Ahead Skills Institute</h4>
+                <div class="meta">SEO (Search Engine Optimization) — 2020 - 2022</div>
+                <ul>
+                  <li>Executed On-Page, Off-Page, Technical, and Local SEO strategies to improve website visibility.</li>
+                  <li>Optimized client websites to achieve higher search engine rankings and stronger online presence.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:20px;">
+            <div class="section-title"><h3>Education</h3></div>
+            <div class="timeline">
+              <div class="t-item">
+                <span class="dot"></span>
+                <div class="job">
+                  <h4>Intermediate</h4>
+                  <div class="meta">Govt Degree College Hyderabad — 2019-2021</div>
+                </div>
+              </div>
+
+              <div class="t-item">
+                <span class="dot"></span>
+                <div class="job">
+                  <h4>CIT (3 Years Diploma in IT)</h4>
+                  <div class="meta">Sindh Board of Technical Education — 2020-2023</div>
+                </div>
+              </div>
+
+              <div class="t-item">
+                <span class="dot"></span>
+                <div class="job">
+                  <h4>Six Month Course in E-Tech & Solar Technician</h4>
+                  <div class="meta">2022-2023</div>
+                </div>
+              </div>
+
+              <div class="t-item">
+                <span class="dot"></span>
+                <div class="job">
+                  <h4>Under Bachelor's (BS - Mathematics)</h4>
+                  <div class="meta">GC-University Hyderabad Sindh</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+    </div>
+
+  </div>
+
+  <script>
+    // small nav highlight
+    document.querySelectorAll('.nav a').forEach(a=>{
+      a.addEventListener('click', e=>{
+        document.querySelectorAll('.nav a').forEach(x=>x.classList.remove('active'));
+        a.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
